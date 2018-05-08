@@ -11,14 +11,14 @@ class Counter extends C {
   }
 
   buttonClickPlus(){
-		const stars = +this.state.stars + 1;
-		this.setState({ stars });
+    const stars = +this.state.stars + 1;
+    this.setState({ stars });
   }
-	buttonClickMinus(){
-		if (+this.state.stars <= 0)
-			return;
-		const stars = +this.state.stars - 1;
-		this.setState({ stars });
+  buttonClickMinus(){
+    if (+this.state.stars <= 0)
+      return;
+    const stars = +this.state.stars - 1;
+    this.setState({ stars });
   }
   render() {
     return (
