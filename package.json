@@ -1,0 +1,37 @@
+{
+  "scripts": {
+    "build": "webpack-dev-server",
+    "prod": "webpack --config webpack.production.babel.js",
+    "postinstall": "./node_modules/webpack/bin/webpack.js --config webpack.production.babel.js",
+    "start": "node --experimental-modules s.mjs",
+    "help": "echo 'это для хироку и все зависимости слиты в dependencies'"
+  },
+  "name": "reactDemo2018",
+  "repository": "https://github.com/GossJS/reactDemo2018.git",
+  "version": "1.0.0",
+  "main": "./src/index.jsx",
+  "engines": {
+    "node": ">=8.5.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "express": "^4.16.3",
+    "material-ui": "^0.20.0",
+    "moment": "^2.22.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-router-dom": "^4.2.2",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15",
+    "webpack-dev-server": "^3.1.3"
+  }
+}
