@@ -22,7 +22,7 @@ class Counter extends C {
   }
   render() {
     return (
-      <div>Лайкер <hr />
+      <div>Лайкер<hr />
         <button onClick={() => this.buttonClickPlus()}><span role="img" aria-label="add">➕</span></button>
         <button onClick={() => this.buttonClickMinus()}><span role="img">➖</span></button>
         <Stars length={this.state.stars} />
@@ -31,6 +31,5 @@ class Counter extends C {
 }
 const Stars = ({ length }) =>
   <span>{Array.from({ length }, (v, i) => ++i).map(() => '⭐️').join('')}</span>;
-
 
 export default Counter;
